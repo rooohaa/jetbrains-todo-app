@@ -32,6 +32,7 @@ const AddForm: React.FC<IProps> = ({ onAdd }) => {
          title: todoTitle,
          completed: false,
          createdAt: new Date().toDateString(),
+         completedAt: '',
       };
 
       onAdd(newTodo);

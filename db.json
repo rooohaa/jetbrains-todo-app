@@ -1,16 +1,18 @@
 {
    "tasks": [
       {
-         "id": "9b1515d06bde3",
-         "title": "Finish test task for JetBrains :)",
+         "id": "52d9a95e4aa96c",
+         "title": "Finish test task for JetBrains",
          "completed": true,
-         "createdAt": "Sun Apr 04 2021"
+         "createdAt": "Mon Mar 29 2021",
+         "completedAt": "Sun Apr 04 2021"
       },
       {
-         "id": "4791111c4536e",
+         "id": "29d905d727436c",
          "title": "Buy a banana",
          "completed": false,
-         "createdAt": "Sun Apr 04 2021"
+         "createdAt": "Sun Apr 04 2021",
+         "completedAt": ""
       }
    ]
 }

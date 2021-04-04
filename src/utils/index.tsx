@@ -46,8 +46,8 @@ export function getTodoStatistics(todos: Array<ITodo>): IStatistics {
    const statistics: IStatistics = {};
 
    todos.forEach((todo) => {
-      const createdAt = new Date(todo.createdAt).getDay();
-      weekDays.push(daysMap[createdAt]);
+      const completedAt = new Date(todo.completedAt).getDay();
+      weekDays.push(daysMap[completedAt]);
    });
 
    weekDays.forEach((weekDay) => {

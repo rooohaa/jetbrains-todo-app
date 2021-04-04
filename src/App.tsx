@@ -15,6 +15,7 @@ export interface ITodo {
    title: string;
    completed: boolean;
    createdAt: string;
+   completedAt: string;
 }
 
 const App: React.FC = () => {
@@ -71,16 +72,23 @@ const App: React.FC = () => {
       const currentTodo = copy.find((todo) => todo.id === id);
 
       if (currentTodo) {
-         const updatedTodo = {
+         const updatedTodo: ITodo = {
             ...currentTodo,
             completed: !currentTodo.completed,
+            completedAt: currentTodo.completed ? '' : new Date().toDateString(),
          };
 
          const data = await api.completeTodo(id, updatedTodo);
 
          setTodos(
             todos.map((todo) =>
-               todo.id === id ? { ...todo, completed: data.completed } : todo
+               todo.id === id
+                  ? {
+                       ...todo,
+                       completed: data.completed,
+                       completedAt: data.completedAt,
+                    }
+                  : todo
             )
          );
       }
