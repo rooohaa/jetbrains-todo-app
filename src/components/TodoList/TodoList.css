@@ -1,0 +1,60 @@
+.list-section {
+   margin-top: 5px;
+   margin-bottom: 50px;
+}
+
+.list-section .container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.todo-list {
+   width: 750px;
+   padding-top: 5px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.message {
+   font-weight: 600;
+   width: 100%;
+   text-align: center;
+   color: #333;
+}
+
+.wrapper {
+   max-width: 750px;
+   margin: 0 auto;
+   margin-top: 20px;
+   padding: 20px 0;
+}
+
+.days {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.day {
+   font-weight: 600;
+   color: #333;
+}
+
+.bars {
+   min-height: 200px;
+   margin-bottom: 15px;
+   border-bottom: 2px solid #bdbdbd;
+
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+}
+
+@media screen and (max-width: 576px) {
+   .wrapper {
+      margin-top: 0;
+   }
+}

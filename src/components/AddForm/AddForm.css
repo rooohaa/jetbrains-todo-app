@@ -1,0 +1,99 @@
+.form-section {
+   margin-top: 20px;
+}
+
+.form-section .container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+form {
+   width: 750px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.form-control {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   margin-bottom: 13px;
+}
+
+input,
+button.add-btn {
+   outline: none;
+   font-size: 13px;
+   line-height: 17px;
+   border-radius: 6px;
+   font-family: 'Poppins', sans-serif;
+}
+
+input {
+   border: 1px solid #bdbdbd;
+
+   width: 80%;
+   margin-right: 8px;
+   padding: 12px;
+}
+
+input:focus {
+   box-shadow: 0 0 5pt 1pt #d3d3d3;
+}
+
+input::placeholder {
+   color: #828282;
+}
+
+button.add-btn {
+   border: none;
+   color: #fff;
+   width: 20%;
+
+   padding: 12px;
+   background: #2f80ed;
+   box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+
+   cursor: pointer;
+   transition: all 0.4s ease-out;
+}
+
+.add-btn:hover {
+   background-color: #4e96f5;
+}
+
+.success,
+.error {
+   border-radius: 4px;
+   width: 100%;
+   color: #fff;
+
+   padding: 10px;
+   margin-bottom: 10px;
+
+   font-size: 14px;
+   line-height: 18px;
+
+   animation: slideIn 0.4s ease-out;
+}
+
+.error {
+   background-color: #ed7483;
+}
+
+.success {
+   background-color: #42ba96;
+}
+
+@keyframes slideIn {
+   from {
+      opacity: 0;
+      transform: translateX(200px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
